@@ -1,0 +1,24 @@
+{
+  "name": "goit-nodejs-hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albatrozzz/goit-nodejs-hw-1.git"
+  },
+  "author": "pds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albatrozzz/goit-nodejs-hw-1/issues"
+  },
+  "homepage": "https://github.com/albatrozzz/goit-nodejs-hw-1#readme"
+}
