@@ -16,7 +16,7 @@ async function invokeAction({ action, id, name, email, phone }) {
     switch (action) {
       case 'list':
         const contactsList = await contactsOperations.listContacts()
-        console.log(contactsList)
+        console.table(contactsList)
         break;
   
       case 'get':
@@ -29,16 +29,8 @@ async function invokeAction({ action, id, name, email, phone }) {
         break;
   
       case 'add':
-        if (name === ''){
-            console.log('enter correct name!')
-            break
-        }
-        if (email === ''){
-            console.log('enter correct email!')
-            break
-        }
-        if (phone === ''){
-            console.log('enter correct phone number!')
+        if (!name || !email || !phone) {
+            console.log('Please enter correct user data')
             break
         }
         const newContact = await contactsOperations.addContact(name, email, phone)
